@@ -77,4 +77,5 @@ The dataset includes variables such as:
 ---
 
 ## 📁 Folder Structure
+Airbnb-Price-Classifier/ ├── data/ │ ├── listings.csv # Main dataset of Airbnb listings │ └── reviews.csv # Supplementary reviews data ├── images/ │ ├── price_distribution.png # Visualizations and plots │ ├── correlation_matrix.png │ └── roc_curve.png ├── Airbnb_Classifier.ipynb # Main notebook (data prep + modeling) └── README.md # Project description and documentation
 
