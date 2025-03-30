@@ -16,7 +16,7 @@ The project addresses two key challenges:
 
 ## 📊 Dataset
 
-- Source: [Add link if dataset is from Kaggle, UCI, etc.]
+- Source: [[Online Retail K-Means & Hierarchical Clustering]](https://www.kaggle.com/code/hellbuoy/online-retail-k-means-hierarchical-clustering)
 - Type: E-commerce transaction dataset
 - Size: ~500,000 rows, ~44 MB
 - Features: customer ID, purchase amount, frequency, recency, product category, etc.
