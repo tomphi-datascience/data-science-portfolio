@@ -1,54 +1,76 @@
-# 👋 Hi, I'm Tom Phi!
+# 🎯 Customer Segmentation and Value Prediction Using Machine Learning
 
-I'm a data analyst and aspiring data scientist with a background in business, finance, and accounting. I'm passionate about turning complex data into meaningful insights, and I love solving real-world problems with machine learning and analytics.
-
-This repository is a curated collection of my data science and analytics projects — showcasing what I’ve built, explored, and learned along the way.
+This project applies both **unsupervised** and **supervised** machine learning techniques to segment customers and predict their future value to a business. The goal is to help businesses target the right customers with the right offers by understanding behavior patterns and estimating lifetime value.
 
 ---
 
-## 📂 Featured Projects
+## 🧠 Problem Statement
 
-### 🏡 [Airbnb Price Classifier](https://github.com/yourusername/airbnb-price-classifier)
-- Predicts whether an Airbnb listing is high-priced based on features like reviews, rating, and location.
-- Techniques: Logistic Regression, SVM, Gradient Boosting, Feature Engineering
+**How can a business group customers based on their behavior and predict which ones are most valuable over time?**
 
-### 💳 [Loan Default Prediction](https://github.com/yourusername/loan-default-prediction)
-- Classifies whether a borrower is likely to default on a loan using real-world financial data.
-- Techniques: Random Forest, Data Cleaning, Model Tuning
-
-### 📝 [Sentiment Analysis of Customer Reviews](https://github.com/yourusername/sentiment-analysis)
-- Analyzes and classifies product reviews as positive or negative.
-- Techniques: NLP, TF-IDF, Text Preprocessing, Naive Bayes
-
-### 📊 [Sales Performance Dashboard (Tableau)](https://public.tableau.com/app/profile/yourname)
-- Interactive dashboard for tracking regional sales trends and KPIs.
+The project addresses two key challenges:
+1. **Customer Segmentation** – Identify distinct customer groups using clustering
+2. **Customer Value Prediction** – Forecast customer value using regression models
 
 ---
 
-## 🧠 Skills & Tools
+## 📊 Dataset
 
-- **Languages**: Python, SQL, R
-- **Libraries**: pandas, NumPy, scikit-learn, matplotlib, seaborn
-- **Machine Learning**: Regression, Classification, Clustering, XGBoost
-- **Visualization**: Tableau, Power BI, Matplotlib, Seaborn
-- **Cloud & Tools**: AWS SageMaker, Jupyter, Git, GitHub, Excel
-
----
-
-## 💡 What I’m Working On
-
-- Expanding my ML portfolio with time series forecasting and NLP
-- Learning MLOps & deployment with Streamlit and AWS
-- Building out my personal website & blog
+- Source: [Add link if dataset is from Kaggle, UCI, etc.]
+- Type: E-commerce transaction dataset
+- Size: ~500,000 rows, ~44 MB
+- Features: customer ID, purchase amount, frequency, recency, product category, etc.
 
 ---
 
-## 📬 Let’s Connect
+## 🔍 Key Techniques Used
 
-- 📧 Email: tom.phi.ds@gmail.com
-- 💼 LinkedIn: (https://www.linkedin.com/in/tomphi-da)
-- 🌐 Portfolio (coming soon)
+### 🧩 Unsupervised Learning (Segmentation)
+- **RFM Analysis** (Recency, Frequency, Monetary value)
+- **K-Means Clustering**
+- **Silhouette Score** to evaluate clustering
+- Customer profiling with visualizations (bar charts, radar plots)
+
+### 📈 Supervised Learning (Value Prediction)
+- **Feature Engineering**
+- **Logistic Regression, Decision Tree, Random Forest**
+- **Model Evaluation**: Accuracy, F1 Score, AUC
+- **Hyperparameter Tuning** using GridSearchCV
 
 ---
 
-Thanks for stopping by — feel free to explore my projects, drop a ⭐, or reach out if you’d like to collaborate!
+## 🛠️ Tools & Libraries
+
+- Python: pandas, NumPy, scikit-learn, matplotlib, seaborn
+- Jupyter Notebook
+- Optional: Streamlit for interactive app (coming soon)
+
+---
+
+## 📊 Project Workflow
+
+1. **Data Cleaning**  
+   - Handled missing values, duplicate records, and date formatting  
+2. **RFM Feature Engineering**  
+   - Created Recency, Frequency, and Monetary columns for each customer  
+3. **Clustering with K-Means**  
+   - Identified optimal number of clusters with Elbow + Silhouette  
+   - Labeled customer groups and visualized segment profiles  
+4. **Value Prediction Modeling**  
+   - Built multiple ML models to classify high-value customers  
+   - Compared metrics and selected best-performing model  
+
+---
+
+## 📈 Results
+
+- **Segmentation:** 4 customer segments identified with distinct purchasing behaviors
+- **Best Classifier (Random Forest):**  
+  - Accuracy: 78%  
+  - F1 Score: 0.75  
+  - AUC Score: 0.82  
+
+---
+
+## 📁 Folder Structure
+
