@@ -104,7 +104,7 @@ pip install -r requirements.txt
 
 # Launch the Streamlit app
 streamlit run app.py
-
+```
 ---
 
 ## 📁 Folder Structure
