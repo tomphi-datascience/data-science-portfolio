@@ -85,7 +85,6 @@ All models performed strongly on TF-IDF-transformed data, with XGBoost and Logis
 
 To run this project on your local machine:
 
-```bash
 # Clone the repository
 git clone https://github.com/yourusername/fake-news-detector.git
 cd fake-news-detector
