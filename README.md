@@ -8,29 +8,31 @@ This project uses **Natural Language Processing (NLP)** and **supervised machine
 
 **Can we automatically identify whether a news article is real or fake based on its content?**
 
-The project solves this binary classification problem using text vectorization and multiple ML algorithms to determine the authenticity of news articles.
+This binary classification project uses vectorized text and multiple machine learning models to detect fake news with high accuracy.
 
 ---
 
 ## 📊 Dataset
 
-- Source: [[Fake and Real News Dataset – Kaggle]](https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset)
-- Type: News article dataset with labeled samples
-- Size: ~50,000 articles
-- Features: title, text content, label (FAKE or REAL)
+- **Source**: [Fake and Real News Dataset – Kaggle](https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset)  
+- **Type**: News article dataset with labeled samples  
+- **Size**: ~50,000 articles  
+- **Features**: Title, full text, label (FAKE or REAL)
 
 ---
 
 ## 🔍 Key Techniques Used
 
-### 📄 Text Preprocessing (NLP)
+### 📄 Text Preprocessing
 - Lowercasing, punctuation removal, stopword filtering
-- TF-IDF Vectorization to convert text into numerical features
+- Combined `title` and trimmed `text` into a single input feature
+- TF-IDF Vectorization for numerical representation
 
 ### 🤖 Machine Learning Models
 - **Logistic Regression**
 - **Naive Bayes**
 - **XGBoost**
+- **Random Forest**
 
 ### 🧪 Model Evaluation
 - Accuracy, F1 Score, ROC AUC
@@ -40,43 +42,54 @@ The project solves this binary classification problem using text vectorization a
 
 ## 🛠️ Tools & Libraries
 
-- Python: pandas, NumPy, scikit-learn, matplotlib, seaborn
-- NLP: TF-IDF (TfidfVectorizer)
-- Streamlit (for web deployment)
-- Jupyter Notebook
-- Git, GitHub
+- Python: `pandas`, `NumPy`, `scikit-learn`, `matplotlib`, `seaborn`  
+- NLP: `TfidfVectorizer` (TF-IDF)  
+- Deployment: `Streamlit`  
+- Environment: Jupyter Notebook, Git, GitHub
 
 ---
 
 ## 🔄 Project Workflow
 
-1. **Data Loading & Cleaning**  
+1. **Data Cleaning**  
    - Merged real and fake datasets  
-   - Dropped irrelevant fields like subject, date  
-   - Combined title and content into one feature column  
+   - Dropped unused fields (`subject`, `date`)  
+   - Created new feature column by combining `title` and `text`
 
-2. **Text Vectorization**  
-   - Applied TF-IDF transformation to the cleaned text data  
+2. **Text Preprocessing & Vectorization**  
+   - Cleaned and vectorized text using TF-IDF
 
-3. **Model Training**  
-   - Trained Logistic Regression, Naive Bayes, and XGBoost models  
-   - Tuned hyperparameters and evaluated using cross-validation  
+3. **Model Training & Evaluation**  
+   - Trained Logistic Regression, Naive Bayes, Random Forest, and XGBoost  
+   - Evaluated using cross-validation and performance metrics
 
-4. **Web App Deployment**  
-   - Built an interactive UI using Streamlit  
-   - Allows users to input custom text and get real-time predictions  
+4. **Deployment**  
+   - Built an interactive Streamlit app for real-time text classification
 
 ---
 
 ## 📈 Results
 
-- **Logistic Regression**: Accuracy = 99.6%, ROC AUC = 99.9%  
-- **Naive Bayes**: Accuracy = 95.6%  
-- **XGBoost**: Accuracy = 99.8%, ROC AUC = 99.9%  
-- All models showed high performance on TF-IDF-transformed data
+| Model               | Accuracy | ROC AUC |
+|--------------------|----------|---------|
+| Logistic Regression| 99.6%    | 99.9%   |
+| Naive Bayes        | 95.6%    | 99.2%   |
+| XGBoost            | 99.8%    | 99.9%   |
+| Random Forest      | 99.7%    | 99.8%   |
+
+All models performed strongly on TF-IDF-transformed data, with XGBoost and Logistic Regression achieving near-perfect scores.
 
 ---
 
 ## 📁 Folder Structure
-```text fake-news-detector/ │ ├── app.py # Streamlit web app ├── notebook.ipynb # Development notebook ├── model/ # Saved models and pipelines ├── data/ # Dataset or link to source ├── requirements.txt # Project dependencies ├── README.md # Project overview └── .gitignore # Files to exclude from Git ```
 
+```text
+fake-news-detector/
+│
+├── app.py                # Streamlit web app
+├── notebook.ipynb        # Development notebook
+├── model/                # Saved models and pipelines
+├── data/                 # Dataset or link to source
+├── requirements.txt      # Project dependencies
+├── README.md             # Project overview
+└── .gitignore            # Files to exclude from Git
