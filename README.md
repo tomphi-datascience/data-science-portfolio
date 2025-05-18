@@ -78,4 +78,5 @@ The project solves this binary classification problem using text vectorization a
 ---
 
 ## 📁 Folder Structure
+```text fake-news-detector/ │ ├── app.py # Streamlit web app ├── notebook.ipynb # Development notebook ├── model/ # Saved models and pipelines ├── data/ # Dataset or link to source ├── requirements.txt # Project dependencies ├── README.md # Project overview └── .gitignore # Files to exclude from Git ```
 
