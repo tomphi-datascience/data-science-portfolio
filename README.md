@@ -1,51 +1,27 @@
-# 👋 Hi, I'm Tom Phi
+# 📰 Fake News Detection Web App
 
-I'm a data analyst and aspiring data scientist with a background in business, finance, and accounting. I’m passionate about transforming data into meaningful insights and applying machine learning to real-world problems that drive value.
-
-This repository is a curated collection of my end-to-end data science and analytics projects — showcasing practical applications of machine learning, statistical analysis, and data visualization.
+This project is a machine learning solution that classifies news articles as **real or fake** based on their content. It includes a complete ML pipeline with data preprocessing, feature extraction using TF-IDF, model training, evaluation, and deployment via a Streamlit web application.
 
 ---
 
-## 📂 Featured Projects
+## 📌 Project Overview
 
-### 🏡 [Airbnb Price Classification](https://github.com/yourusername/airbnb-price-classification)  
-Predicts whether an Airbnb listing is high-priced based on features like ratings, reviews, location, and room characteristics.  
-**Tech stack**: Logistic Regression, SVM, Naive Bayes, Feature Engineering, Model Evaluation
-
-### 📰 [Fake News Detection App](https://github.com/yourusername/fake-news-classifier)  
-A Streamlit web app that classifies news articles as real or fake using natural language processing and machine learning.  
-**Tech stack**: TF-IDF, Naive Bayes, Logistic Regression, XGBoost, Streamlit, Pipeline Deployment
-
-### 🛍️ [Customer Segmentation & Value Prediction](https://github.com/yourusername/customer-segmentation-clv)  
-Segments customers using clustering and predicts their lifetime value to inform business strategies.  
-**Tech stack**: K-Means Clustering, Regression, RFM Analysis, Data Visualization, Feature Engineering
+- **Objective**: Build a machine learning model to classify whether a news article is fake or real.
+- **Approach**: Natural Language Processing (NLP) techniques with supervised learning algorithms.
+- **Deployment**: Interactive Streamlit app for live text classification and model demonstration.
 
 ---
 
-## 🧠 Skills & Tools
+## 🧠 Techniques & Tools Used
 
-- **Languages**: Python, SQL, R  
+- **Languages**: Python  
 - **Libraries**: pandas, NumPy, scikit-learn, matplotlib, seaborn  
-- **ML Techniques**: Classification, Regression, Clustering, TF-IDF, Hyperparameter Tuning  
-- **Visualization**: Tableau, Power BI, Matplotlib  
-- **Tools**: Jupyter Notebook, Git, GitHub, Excel, VS Code
+- **NLP**: TF-IDF Vectorization, Text Preprocessing (lowercasing, stopword removal, punctuation stripping)  
+- **Models**: Logistic Regression, Naive Bayes, XGBoost  
+- **Evaluation**: Accuracy, ROC AUC Score, Confusion Matrix  
+- **Deployment**: Streamlit, GitHub
 
 ---
 
-## 💡 Currently Exploring
+## 📁 Project Structure
 
-- Time series forecasting and advanced NLP techniques  
-- Model deployment and MLOps (Streamlit, GitHub, AWS)  
-- Building a personal website and project blog (coming soon)
-
----
-
-## 📬 Let’s Connect
-
-- 📧 **Email**: tom.phi.ds@gmail.com  
-- 💼 **LinkedIn**: [linkedin.com/in/tomphi-da](https://www.linkedin.com/in/tomphi-da)  
-- 🌐 **Portfolio**: Coming soon
-
----
-
-Thanks for visiting — feel free to check out my projects, leave a ⭐, or connect if you're interested in collaborating!
