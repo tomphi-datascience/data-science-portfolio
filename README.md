@@ -24,4 +24,12 @@ This project is a machine learning solution that classifies news articles as **r
 ---
 
 ## 📁 Project Structure
-
+fake-news-detector/
+│
+├── app.py # Streamlit web app
+├── notebook.ipynb # Development notebook
+├── model/ # Saved models and pipelines
+├── data/ # Dataset (or source link)
+├── requirements.txt # Project dependencies
+├── README.md # Project overview
+└── .gitignore # Files to exclude from Git
