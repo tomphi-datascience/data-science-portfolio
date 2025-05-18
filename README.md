@@ -81,8 +81,20 @@ All models performed strongly on TF-IDF-transformed data, with XGBoost and Logis
 
 ---
 
+## 🔍 Future Improvements
+
+- Add **lemmatization** and **named entity recognition (NER)** to enhance text understanding
+- Train on **larger-scale** or **multilingual** news datasets for broader generalization
+- Improve the **Streamlit UI/UX** with clearer feedback and styling
+- Integrate with **real-time news APIs** (e.g., NewsAPI, GNews) for live article classification
+- Add **explainability tools** like SHAP or LIME to visualize model reasoning
+- Deploy on the cloud (e.g., **Streamlit Cloud**, **Heroku**, or **AWS**) for public access
+
+---
+
 ## 🚀 How to Run Locally
 
+```text
 To run this project on your local machine:
 
 # Clone the repository
@@ -94,17 +106,6 @@ pip install -r requirements.txt
 
 # Launch the Streamlit app
 streamlit run app.py
-
----
-
-## 🔍 Future Improvements
-
-- Add **lemmatization** and **named entity recognition (NER)** to enhance text understanding
-- Train on **larger-scale** or **multilingual** news datasets for broader generalization
-- Improve the **Streamlit UI/UX** with clearer feedback and styling
-- Integrate with **real-time news APIs** (e.g., NewsAPI, GNews) for live article classification
-- Add **explainability tools** like SHAP or LIME to visualize model reasoning
-- Deploy on the cloud (e.g., **Streamlit Cloud**, **Heroku**, or **AWS**) for public access
 
 ---
 
