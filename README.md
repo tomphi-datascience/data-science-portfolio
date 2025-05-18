@@ -93,3 +93,15 @@ fake-news-detector/
 ├── requirements.txt      # Project dependencies
 ├── README.md             # Project overview
 └── .gitignore            # Files to exclude from Git
+
+---
+
+## 🔍 Future Improvements
+
+- Add **lemmatization** and **named entity recognition (NER)** to enhance text understanding
+- Train on **larger-scale** or **multilingual** news datasets for broader generalization
+- Improve the **Streamlit UI/UX** with clearer feedback and styling
+- Integrate with **real-time news APIs** (e.g., NewsAPI, GNews) for live article classification
+- Add **explainability tools** like SHAP or LIME to visualize model reasoning
+- Deploy on the cloud (e.g., **Streamlit Cloud**, **Heroku**, or **AWS**) for public access
+
