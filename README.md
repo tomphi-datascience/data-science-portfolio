@@ -31,8 +31,8 @@ This binary classification project uses vectorized text and multiple machine lea
 ### 🤖 Machine Learning Models
 - **Logistic Regression**
 - **Naive Bayes**
-- **XGBoost**
 - **Random Forest**
+- **XGBoost**
 
 ### 🧪 Model Evaluation
 - Accuracy, F1 Score, ROC AUC
@@ -43,7 +43,7 @@ This binary classification project uses vectorized text and multiple machine lea
 ## 🛠️ Tools & Libraries
 
 - Python: `pandas`, `NumPy`, `scikit-learn`, `matplotlib`, `seaborn`  
-- NLP: `TfidfVectorizer` (TF-IDF)  
+- NLP: `TfidfVectorizer`  
 - Deployment: `Streamlit`  
 - Environment: Jupyter Notebook, Git, GitHub
 
@@ -74,10 +74,38 @@ This binary classification project uses vectorized text and multiple machine lea
 |--------------------|----------|---------|
 | Logistic Regression| 99.6%    | 99.9%   |
 | Naive Bayes        | 95.6%    | 99.2%   |
-| XGBoost            | 99.8%    | 99.9%   |
 | Random Forest      | 99.7%    | 99.8%   |
+| XGBoost            | 99.8%    | 99.9%   |
 
 All models performed strongly on TF-IDF-transformed data, with XGBoost and Logistic Regression achieving near-perfect scores.
+
+---
+
+## 🚀 How to Run Locally
+
+To run this project on your local machine:
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/fake-news-detector.git
+cd fake-news-detector
+
+# Install the required dependencies
+pip install -r requirements.txt
+
+# Launch the Streamlit app
+streamlit run app.py
+
+---
+
+## 🔍 Future Improvements
+
+- Add **lemmatization** and **named entity recognition (NER)** to enhance text understanding
+- Train on **larger-scale** or **multilingual** news datasets for broader generalization
+- Improve the **Streamlit UI/UX** with clearer feedback and styling
+- Integrate with **real-time news APIs** (e.g., NewsAPI, GNews) for live article classification
+- Add **explainability tools** like SHAP or LIME to visualize model reasoning
+- Deploy on the cloud (e.g., **Streamlit Cloud**, **Heroku**, or **AWS**) for public access
 
 ---
 
@@ -92,16 +120,5 @@ fake-news-detector/
 ├── data/                 # Dataset or link to source
 ├── requirements.txt      # Project dependencies
 ├── README.md             # Project overview
-└── .gitignore            # Files to exclude from Git```
-
----
-
-## 🔍 Future Improvements
-
-- Add **lemmatization** and **named entity recognition (NER)** to enhance text understanding
-- Train on **larger-scale** or **multilingual** news datasets for broader generalization
-- Improve the **Streamlit UI/UX** with clearer feedback and styling
-- Integrate with **real-time news APIs** (e.g., NewsAPI, GNews) for live article classification
-- Add **explainability tools** like SHAP or LIME to visualize model reasoning
-- Deploy on the cloud (e.g., **Streamlit Cloud**, **Heroku**, or **AWS**) for public access
+└── .gitignore            # Files to exclude from Git
 
