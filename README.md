@@ -92,7 +92,7 @@ fake-news-detector/
 ├── data/                 # Dataset or link to source
 ├── requirements.txt      # Project dependencies
 ├── README.md             # Project overview
-└── .gitignore            # Files to exclude from Git
+└── .gitignore            # Files to exclude from Git```
 
 ---
 
